@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/OSTrails/benchmark-form git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-ecru-bulldog.sh
-        container: qc.acc_pasty-pear-hamster
+        - /usr/bin/env sh .sqa/script.flimsy-celadon-donkey.sh
+        container: qc.acc_shaky-olive-wrasse
   QC.Doc:
     repos:
       github.com/OSTrails/benchmark-form find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-aqua-insect.sh
-        container: qc.doc_surly-buff-tzu
+        - /usr/bin/env sh .sqa/script.randy-goldenrod-crab.sh
+        container: qc.doc_beady-tomato-zonkey
       github.com/OSTrails/benchmark-form git:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-saffron-ragdoll.sh
-        container: qc.doc_pokey-chestnut-ladybird
+        - /usr/bin/env sh .sqa/script.lovely-beige-chinchilla.sh
+        container: qc.doc_blurry-gold-gharial
       github.com/OSTrails/benchmark-form markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-lime-moorhen.sh
-        container: qc.doc_scanty-wisteria-lionfish
+        - /usr/bin/env sh .sqa/script.randy-tan-flounder.sh
+        container: qc.doc_pokey-ultramarine-hyena
   QC.Lic:
     repos:
       github.com/OSTrails/benchmark-form licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-black-quail.sh
-        container: qc.lic_skimpy-brown-turtle
+        - /usr/bin/env sh .sqa/script.muzzy-cerise-pig.sh
+        container: qc.lic_bumpy-khaki-stingray
   QC.Met:
     repos:
       github.com/OSTrails/benchmark-form cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-ochre-deer.sh
-        container: qc.met_muzzy-grey-vulture
+        - /usr/bin/env sh .sqa/script.baggy-azure-tzu.sh
+        container: qc.met_sloppy-beige-dragon
   QC.Ver:
     repos:
       github.com/OSTrails/benchmark-form get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-ivory-ferret.sh
-        container: qc.ver_shabby-wisteria-goat
+        - /usr/bin/env sh .sqa/script.squeaky-eggplant-penguin.sh
+        container: qc.ver_chewy-lemon-bear
 timeout: 5400
