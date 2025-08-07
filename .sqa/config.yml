@@ -1,0 +1,52 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: main
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/OSTrails/benchmark-form:
+      branch: main
+      repo: https://github.com/OSTrails/benchmark-form.git
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/OSTrails/benchmark-form git:
+        commands:
+        - /usr/bin/env sh .sqa/script.whiny-ecru-bulldog.sh
+        container: qc.acc_pasty-pear-hamster
+  QC.Doc:
+    repos:
+      github.com/OSTrails/benchmark-form find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.scanty-aqua-insect.sh
+        container: qc.doc_surly-buff-tzu
+      github.com/OSTrails/benchmark-form git:
+        commands:
+        - /usr/bin/env sh .sqa/script.queasy-saffron-ragdoll.sh
+        container: qc.doc_pokey-chestnut-ladybird
+      github.com/OSTrails/benchmark-form markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.breezy-lime-moorhen.sh
+        container: qc.doc_scanty-wisteria-lionfish
+  QC.Lic:
+    repos:
+      github.com/OSTrails/benchmark-form licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.slaphappy-black-quail.sh
+        container: qc.lic_skimpy-brown-turtle
+  QC.Met:
+    repos:
+      github.com/OSTrails/benchmark-form cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.thirsty-ochre-deer.sh
+        container: qc.met_muzzy-grey-vulture
+  QC.Ver:
+    repos:
+      github.com/OSTrails/benchmark-form get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.flaky-ivory-ferret.sh
+        container: qc.ver_shabby-wisteria-goat
+timeout: 5400
