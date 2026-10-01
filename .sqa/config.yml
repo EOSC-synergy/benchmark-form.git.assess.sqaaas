@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: main
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/OSTrails/benchmark-form:
       branch: main
@@ -15,38 +15,44 @@ sqa_criteria:
     repos:
       github.com/OSTrails/benchmark-form git:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-celadon-donkey.sh
-        container: qc.acc_shaky-olive-wrasse
+        - /usr/bin/env sh .sqa/script.poppy_open_moth.sh
+        container: qc.acc_fandango_relaxed_serval
   QC.Doc:
     repos:
       github.com/OSTrails/benchmark-form find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-goldenrod-crab.sh
-        container: qc.doc_beady-tomato-zonkey
+        - /usr/bin/env sh .sqa/script.ash_stoic_goose.sh
+        container: qc.doc_royal_logical_grizzly
       github.com/OSTrails/benchmark-form git:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-beige-chinchilla.sh
-        container: qc.doc_blurry-gold-gharial
+        - /usr/bin/env sh .sqa/script.yellow_sad_goat.sh
+        container: qc.doc_taupe_apathetic_wombat
       github.com/OSTrails/benchmark-form markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-tan-flounder.sh
-        container: qc.doc_pokey-ultramarine-hyena
+        - /usr/bin/env sh .sqa/script.slate_tolerant_dhole.sh
+        container: qc.doc_peach_independent_angelfish
   QC.Lic:
     repos:
       github.com/OSTrails/benchmark-form licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-cerise-pig.sh
-        container: qc.lic_bumpy-khaki-stingray
+        - /usr/bin/env sh .sqa/script.grege_humble_baboon.sh
+        container: qc.lic_bronze_tolerant_lionfish
   QC.Met:
     repos:
       github.com/OSTrails/benchmark-form cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-azure-tzu.sh
-        container: qc.met_sloppy-beige-dragon
+        - /usr/bin/env sh .sqa/script.marina_friendly_sparrow.sh
+        container: qc.met_storm_feisty_dingo
+  QC.Sty:
+    repos:
+      github.com/OSTrails/benchmark-form jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.wheat_witty_bear.sh
+        container: qc.sty_cream_confident_donkey
   QC.Ver:
     repos:
       github.com/OSTrails/benchmark-form get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-eggplant-penguin.sh
-        container: qc.ver_chewy-lemon-bear
+        - /usr/bin/env sh .sqa/script.banana_flexible_buffalo.sh
+        container: qc.ver_avocado_sweet_viper
 timeout: 5400
