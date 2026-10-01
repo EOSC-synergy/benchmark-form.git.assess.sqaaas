@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/OSTrails/benchmark-form git:
         commands:
-        - /usr/bin/env sh .sqa/script.poppy_open_moth.sh
-        container: qc.acc_fandango_relaxed_serval
+        - /usr/bin/env sh .sqa/script.rust_harmonious_giraffe.sh
+        container: qc.acc_mulberry_productive_otter
   QC.Doc:
     repos:
       github.com/OSTrails/benchmark-form find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ash_stoic_goose.sh
-        container: qc.doc_royal_logical_grizzly
+        - /usr/bin/env sh .sqa/script.smoke_nervous_groundhog.sh
+        container: qc.doc_thistle_savvy_fox
       github.com/OSTrails/benchmark-form git:
         commands:
-        - /usr/bin/env sh .sqa/script.yellow_sad_goat.sh
-        container: qc.doc_taupe_apathetic_wombat
+        - /usr/bin/env sh .sqa/script.pansy_dreamy_cougar.sh
+        container: qc.doc_butterscotch_dramatic_dormouse
       github.com/OSTrails/benchmark-form markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.slate_tolerant_dhole.sh
-        container: qc.doc_peach_independent_angelfish
+        - /usr/bin/env sh .sqa/script.turquoise_fair_seahorse.sh
+        container: qc.doc_amethyst_shy_penguin
   QC.Lic:
     repos:
       github.com/OSTrails/benchmark-form licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.grege_humble_baboon.sh
-        container: qc.lic_bronze_tolerant_lionfish
+        - /usr/bin/env sh .sqa/script.heather_amiable_quail.sh
+        container: qc.lic_cinnamon_brave_dragon
   QC.Met:
     repos:
       github.com/OSTrails/benchmark-form cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.marina_friendly_sparrow.sh
-        container: qc.met_storm_feisty_dingo
+        - /usr/bin/env sh .sqa/script.ivory_practical_dragon.sh
+        container: qc.met_copper_energetic_puffin
   QC.Sty:
     repos:
       github.com/OSTrails/benchmark-form jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheat_witty_bear.sh
-        container: qc.sty_cream_confident_donkey
+        - /usr/bin/env sh .sqa/script.grape_friendly_impala.sh
+        container: qc.sty_marina_agile_squirrel
   QC.Ver:
     repos:
       github.com/OSTrails/benchmark-form get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.banana_flexible_buffalo.sh
-        container: qc.ver_avocado_sweet_viper
+        - /usr/bin/env sh .sqa/script.thistle_thankful_gorilla.sh
+        container: qc.ver_linen_cheerful_bear
 timeout: 5400
